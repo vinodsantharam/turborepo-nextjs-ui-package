@@ -1,6 +1,6 @@
 {
   "name": "@poc/ui-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A UI kit package with React and Tailwind CSS",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -32,9 +32,13 @@
   "author": "",
   "license": "ISC",
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^19.0.0-rc.0",
+    "react-dom": "^19.0.0-rc.0",
     "tailwindcss": "^4.1.11"
+  },
+  "overrides": {
+    "@types/react": "^19.0.0-rc.0",
+    "@types/react-dom": "^19.0.0-rc.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
@@ -45,7 +49,8 @@
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/react": "^18.3.3",
+    "@types/react": "^19.0.0-rc.0",
+    "@types/react-dom": "^19.0.0-rc.0",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.39",
     "rollup": "^4.18.1",
